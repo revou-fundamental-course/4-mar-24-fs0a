@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator BMI</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Calculator BMI</h1>
+        </header>
+        <main>
+            <div class="main-container">
+                <div class="container-item">
+                    <h2>BMI Calculator</h2>
+                    <p>BMI is one aspect of a person that can be easily measured to determine one health condition. Checking your BMI values might help you understand the current state of your body to the health standard. Here's a calculator to help you find the value of your BMI easily </p>
+                    <section class="container-form">
+                        <div class="input-data">
+                            <label>Sex</label><br>
+                            <input type="radio" name="sex" id="sex-male"><label for="sex-male">Male</label>
+                            <input type="radio" name="sex" id="sex-female"><label for="sex-female">Female</label>                
+                        </div>
+                        <div class="input-data">
+                            <label>Weight (kg)</label><br>
+                            <input type="number" name="hweight" id="hw" placeholder="15">
+                        </div>
+                        <div class="input-data">
+                            <label>Age (y.o.)</label><br>
+                            <input type="number" name="hage" id="ha" placeholder="40">
+                        </div>
+                        <div class="input-data">
+                            <label>Height (cm)</label ><br>
+                            <input type="number" name="hheight" id="hh" placeholder="140">
+                        </div>
+                        <div class="input-data">
+                            <button onclick="calculateBMI()" type="button" id="cunt">Count BMI</button><button type="button">Reset</button>
+                        </div>
+                    </section>
+                </div>
+            
+                <div class="container-item">
+                    <h2>Result</h2>
+                    <section class="container-result">
+                        <h4 id="BMIcat">data kosong</h4>
+                        <h1 id="BMIval">Data BMI belum</h1>
+                        <h4 id="BMI-exp">Anda Memiliki Berat Badan Berlebih</h4>
+                    </section>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
