@@ -14,29 +14,31 @@
                 <div class="container-item">
                     <h2>BMI Calculator</h2>
                     <p>BMI is one aspect of a person that can be easily measured to determine one health condition. Checking your BMI values might help you understand the current state of your body to the health standard. Here's a calculator to help you find the value of your BMI easily </p>
-                    <section class="container-form">
+                    <form class="container-form" >
                         <div class="input-data">
-                            <label>Gender</label><br>
+                            <label for="sextype">Gender</label><br>
+                            <div id="sextype">
                             <input type="radio" name="sex" id="sex-male" value="Sir"><label for="sex-male">Male</label>
-                            <input type="radio" name="sex" id="sex-female" value="Lady"><label for="sex-female">Female</label>                
+                            <input type="radio" name="sex" id="sex-female" value="Lady"><label for="sex-female">Female</label>     
+                            </div>             
                         </div>
                         <div class="input-data">
-                            <label>Age (y.o.)</label><br>
+                            <label for="ha">Age (y.o.)</label><br>
                             <input type="number" name="hage" id="ha" placeholder="your age in years old">
                         </div>
                         <div class="input-data">
-                            <label>Weight (kg)</label><br>
+                            <label for="hw">Weight (kg)</label><br>
                             <input type="number" name="hweight" id="hw" placeholder="your body weight in kilogram">
                         </div>
                         <div class="input-data">
-                            <label>Height (cm)</label ><br>
+                            <label for="hh">Height (cm)</label ><br>
                             <input type="number" name="hheight" id="hh" placeholder="your body height in centimeter">
                         </div>
                         <div class="input-data">
-                            <button onclick="calculateBMI()" type="button" id="countBMI">Count BMI</button>
+                            <button onclick="checkform()" type="button" id="countBMI">Count BMI</button>
                             <button onclick="resetBMI()" type="button">Reset</button>
                         </div>
-                    </section>
+                    </form>
                 </div>
             
                 <div class="container-item">
@@ -44,7 +46,7 @@
                     <section class="container-result">
                         <h4 id="BMIcat">we have not received your data</h4>
                         <h1 id="BMIval">there is no data to calculate</h1>
-                        <div id="resultSX">hi</div>
+                        <h3 id="resultSX">hello</h3>
                         <h4 id="BMI-exp">plase input your data and then click  <button onclick="calculateBMI()" type="button" id="countBMI">Count BMI</button> to measure your BMI</h4>
                     </section>
                 </div>
