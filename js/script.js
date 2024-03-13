@@ -12,18 +12,27 @@ var call = String     ; //set nickname
 
     for (i = 0; i < gender.length; i++) {
     if (gender[i].checked) {
-        document.getElementById("resultSX").innerHTML
-            = "Gender: " + gender[i].value;
         
     if (gender[i].value == "Lady"){
-        if (age < 18){ call = "Girl"
-        } else if (age < 30) { call = "Lady"
-        } else {call = "Ma'am"}
+        if (age < 18){ 
+            document.getElementById("resultSX").innerHTML = "Girl";
+        } else if (age < 30) { 
+            document.getElementById("resultSX").innerHTML = "Lady";
+        } else if (age < 120) { 
+            document.getElementById("resultSX").innerHTML = "Ma'am";
+        } else {
+            document.getElementById("resultSX").innerHTML = "Ancient One";
+        }
     } else  {
-        if (age < 18){ call = "Boy"
-        } else if (age < 30) { call = "Mister"
-        } else {call = "Sir"}
-    //} else {console.log("dumass")
+        if (age < 18){ 
+            document.getElementById("resultSX").innerHTML = "Boy";
+        } else if (age < 30) { 
+            document.getElementById("resultSX").innerHTML = "Mister";
+        } else if (age < 120) { 
+            document.getElementById("resultSX").innerHTML = "Sir";
+        } else {
+            document.getElementById("resultSX").innerHTML = "Ancient One";
+        }
     }
 
 
